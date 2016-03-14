@@ -10,21 +10,20 @@ angular.module('starter')
         console.log("Next: ", next);
 
         if (next.views.menuContent.data){
-            
+
 
             var authorizedRoles = next.views.menuContent.data.authorizedRoles;
             console.log(Auth.isAuthorized(authorizedRoles));
             if (!Auth.isAuthorized(authorizedRoles)) {
-                console.log("I want to sleep");
+                console.log("User is not authorized");
               event.preventDefault();
-              console.log("I want to sleep 22222");
               if (Auth.isAuthenticated()) {
-                console.log("I want to sleep 333");
+                console.log("but is authenticated");
                 // user is not allowed
                 $rootScope.$broadcast(AUTH_EVENTS.notAuthorized);
               } else {
                 // user is not logged in
-                console.log("I want to sleep 444");
+                console.log("user is not logged in");
                 console.log(AUTH_EVENTS.notAuthenticated);
                 $rootScope.$broadcast(AUTH_EVENTS.notAuthenticated);
 

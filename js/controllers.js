@@ -2,7 +2,7 @@ angular.module('starter')
 
 .controller('LoginCtrl', [ '$scope', '$state' , '$window', 'Auth', '$ionicHistory',
   function($scope, $state, $window, Auth, $ionicHistory) {
-    console.log("Not french");
+    console.log("Login Control reached");
     $scope.credentials = {};
     $scope.loginForm = {};
     $scope.error = false;
@@ -53,7 +53,7 @@ angular.module('starter')
             $ionicHistory.nextViewOptions({
               disableBack: true
             });
-            $state.go('app.search');
+            $state.go('app.playlists');
         }, function(err) {
             $scope.error = true;
             $scope.errorMessage ="error at send request";
@@ -147,12 +147,12 @@ function($scope, $state,$rootScope, Auth, AUTH_EVENTS, USER_ROLES, $ionicHistory
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+    { title: 'Mark Subit', id: 1 },
+    { title: 'Anthony Walton', id: 2 },
+    { title: 'Daniel Wicks', id: 3 },
+    { title: 'Gavin Shelley', id: 4 },
+    { title: 'Guy Random', id: 5 },
+    { title: 'John Smith', id: 6 }
   ];
 })
 

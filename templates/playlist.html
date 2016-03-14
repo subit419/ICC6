@@ -1,8 +1,32 @@
-<ion-view view-title="Playlist">
+<ion-view view-title="Staff Details">
 <ion-nav-buttons side="right">
     <button class="button icon-left ion-log-out button-stable" ng-click="logout()">Logout</button>
   </ion-nav-buttons>
   <ion-content>
-    <h1>Playlist</h1>
+    <h1>Details</h1>
+
+    <ion-list>
+        <ion-item>
+          Staff ID: STAT000001
+        </ion-item>
+        <ion-item>
+          First Name: Mark
+        </ion-item>
+        <ion-item>
+          Last Name: Subit
+        </ion-item>
+        <ion-item>
+          Staff Status: Full-Time
+        </ion-item>
+        <ion-item>
+          Hourly Wage: $45.00
+        </ion-item>
+        <ion-item>
+          Staff Type: Owner
+        </ion-item>
+        <ion-item href="#/app/schedule">
+          View Schedule <span class="ion-arrow-right-c"></span>
+        </ion-item>
+      </ion-list>
   </ion-content>
 </ion-view>

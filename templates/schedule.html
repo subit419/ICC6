@@ -3,7 +3,7 @@
     <button class="button icon-left ion-log-out button-stable" ng-click="logout()">Logout</button>
   </ion-nav-buttons>
   <ion-content>
-  <h1>Schedule</h1>
+  <h1>Schedule (Sample Data)</h1>
   <form ng-submit="makeSchedule()">
       <div class="list">
         <label class="item item-input">
@@ -13,9 +13,24 @@
         <label class="item">
           <button class="button button-block button-positive" type="submit">Get Schedule</button>
         </label>
-
       </div>
-
+    <ion-list>
+        <ion-item>
+          Date: 2016-01-04
+        </ion-item>
+        <ion-item>
+          Start Time: 8:00 AM EST
+        </ion-item>
+        <ion-item>
+          End Time: 2:00 PM EST
+        </ion-item>
+        <ion-item>
+          Specialty Equipment: Floor Cleaner, Floor Waxer
+        </ion-item>
+        <ion-item>
+          Supervisor: Daniel Wicks
+        </ion-item>
+      </ion-list>
     </form>
   </ion-content>
 </ion-view>

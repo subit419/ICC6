@@ -72,7 +72,7 @@ function($stateProvider, $urlRouterProvider,USER_ROLES) {
           templateUrl: 'templates/playlists.html',
           controller: 'PlaylistsCtrl',
           data: {
-              authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor, USER_ROLES.owner]
+              authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor, USER_ROLES.owner, USER_ROLES.team_member]
           }
         }
       }
@@ -85,7 +85,7 @@ function($stateProvider, $urlRouterProvider,USER_ROLES) {
         templateUrl: 'templates/playlist.html',
         controller: 'PlaylistCtrl',
         data: {
-                  authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor, USER_ROLES.owner]
+                  authorizedRoles: [USER_ROLES.admin, USER_ROLES.editor, USER_ROLES.owner, USER_ROLES.team_member]
                     }
       }
     }
