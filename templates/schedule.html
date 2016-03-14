@@ -1,0 +1,21 @@
+<ion-view view-title="Schedule">
+<ion-nav-buttons side="right">
+    <button class="button icon-left ion-log-out button-stable" ng-click="logout()">Logout</button>
+  </ion-nav-buttons>
+  <ion-content>
+  <h1>Schedule</h1>
+  <form ng-submit="makeSchedule()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Work Date</span>
+          <input type="date" ng-model="scheduleDate">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Get Schedule</button>
+        </label>
+
+      </div>
+
+    </form>
+  </ion-content>
+</ion-view>
